@@ -1,18 +1,22 @@
 <script lang="ts">
   import AlbumCover from "../common/AlbumCover.svelte";
-  import Heart from '../Heart/Heart.svelte'
+  import Heart from "../Heart/Heart.svelte";
   export let albums = [];
 </script>
 
 <style>
+  div {
+    display: flex;
+    justify-content: center;
+  }
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
     grid-auto-rows: 12.8rem;
-    gap: var(--spacingMedium);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
     list-style: none;
-    max-width: 100%;
+    max-width: 80%;
     padding: 0;
   }
   li {
@@ -26,15 +30,17 @@
   }
 </style>
 
-<ul>
-  {#each albums as album}
-    <li>
-      <AlbumCover {album} />
-      {#if album.favorite}
-        <div class="heart">
-          <Heart />
-        </div>
-      {/if}
-    </li>
-  {/each}
-</ul>
+<div>
+  <ul>
+    {#each albums as album}
+      <li>
+        <AlbumCover {album} />
+        {#if album.favorite}
+          <div class="heart">
+            <Heart />
+          </div>
+        {/if}
+      </li>
+    {/each}
+  </ul>
+</div>

@@ -46,14 +46,14 @@
     background-image: linear-gradient(
       to right,
       var(--bgLight) 10%,
-      var(--bg) 20%
+      var(--bg) 0%
     );
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 4px;
     color: #000;
     font-size: var(--typeSizeLarge);
-    height: 100%;
+    height: 300px;
     left: 0;
     overflow: hidden;
     position: absolute;
@@ -62,7 +62,7 @@
     text-shadow: 2px 2px 0 #fff;
     top: 0;
     transition: all 300ms;
-    width: 100%;
+    width: 300px;
   }
   .book--no-cover .cover::before {
     background: linear-gradient(to right, var(--bg) 50%, var(--bgDark));
@@ -90,7 +90,7 @@
   }
 </style>
 
-<a href="#" class="book book--interactive book--cover">
+<a href="#" class="book book--interactive book--cover cover">
   <span class="cover" style={`background-image: url("/albumCovers/${album.cover}")`}>
     <span class="title">{album.title || ''}</span>
   </span>
