@@ -1,3 +1,9 @@
+<script>
+  import { links } from "svelte-routing";
+
+  export let to
+</script>
+
 <style>
   .button {
     background: var(--colorCta);
@@ -14,9 +20,10 @@
     margin: 0;
     padding: calc(var(--spacingSmall) * 1.5) var(--spacingLarge);
     text-overflow: ellipsis;
-    text-transform: uppercase;
     transition: filter 150ms;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
   }
   .button:hover,
   .button:focus {
@@ -26,6 +33,12 @@
   }
 </style>
 
-<button class="button">
-  <slot />
-</button>
+{#if to}
+  <a on:click class="button" href={to} use:links>
+    <slot />
+  </a>
+{:else}
+  <button on:click class="button">
+    <slot />
+  </button>
+{/if}

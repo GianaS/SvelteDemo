@@ -1,5 +1,9 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
+  import { links } from "svelte-routing";
+
   export let album = {};
+  export let interactive = false;
 </script>
 
 <style>
@@ -14,17 +18,7 @@
     position: relative;
     transition: all 550ms;
     width: 100%;
-  }
-
-  .book--variation-1 {
-    --bg: #ea7025;
-    --bgDark: #d7480b;
-    --bgLight: #fb9c61;
-  }
-  .book--variation-2 {
-    --bg: #76c267;
-    --bgDark: #57b356;
-    --bgLight: #a6e69a;
+    text-decoration: none;
   }
 
   .book--interactive {
@@ -38,8 +32,7 @@
   }
 
   .cover,
-  .title,
-  .author {
+  .title {
     display: block;
   }
   .cover {
@@ -56,7 +49,6 @@
     height: 300px;
     left: 0;
     overflow: hidden;
-    position: absolute;
     text-align: left;
     text-transform: uppercase;
     text-shadow: 2px 2px 0 #fff;
@@ -64,15 +56,7 @@
     transition: all 300ms;
     width: 300px;
   }
-  .book--no-cover .cover::before {
-    background: linear-gradient(to right, var(--bg) 50%, var(--bgDark));
-    content: " ";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 10%;
-  }
+
   .book--interactive:hover .cover,
   .book--interactive:focus .cover {
     box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -84,14 +68,24 @@
     line-height: var(--typeLineHeightTight);
     margin: 3rem 0 var(--spacingMedium) calc(10% + var(--spacingSmall));
   }
-  .author {
-    letter-spacing: 0.25em;
-    margin-left: calc(10% + var(--spacingSmall));
-  }
 </style>
 
-<a href="#" class="book book--interactive book--cover cover">
-  <span class="cover" style={`background-image: url("/albumCovers/${album.cover}")`}>
-    <span class="title">{album.title || ''}</span>
-  </span>
-</a>
+{#if interactive}
+  <a
+    href={`albums/${album.id}`}
+    class="book book--interactive book--cover cover"
+    use:links>
+    <span
+      class="cover"
+      style={`background-image: url("/albumCovers/${album.cover}")`}>
+      <span class="title">{album.title || ''}</span>
+    </span>
+  </a>
+{:else}
+  <div class="book book--cover cover">
+    <span
+      class="cover"
+      style={`background-image: url("/albumCovers/${album.cover}")`}>
+    </span>
+  </div>
+{/if}

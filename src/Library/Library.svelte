@@ -5,15 +5,12 @@
   import { httpGet } from "../common/api";
 
   let albums = [];
+  
   onMount(async () => {
     const { data } = await httpGet("/?_sort=id$_order=desc");
     albums = data;
   });
 </script>
-
-<style>
-
-</style>
 
 <header>
   <h1>Welcome, Swifties!</h1>

@@ -16,7 +16,7 @@
     grid-column-gap: 60px;
     grid-row-gap: 40px;
     list-style: none;
-    max-width: 80%;
+    max-width: 85%;
     padding: 0;
   }
   li {
@@ -34,7 +34,7 @@
   <ul>
     {#each albums as album}
       <li>
-        <AlbumCover {album} />
+        <AlbumCover interactive {album} />
         {#if album.favorite}
           <div class="heart">
             <Heart />
