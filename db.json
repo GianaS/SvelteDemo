@@ -1,0 +1,68 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "title": "Taylor Swift",
+      "artist": "Taylor Swift",
+      "cover": "taylorSwift.jpeg",
+      "about": "This is about the album",
+      "favorite": true
+    },
+    {
+      "id": 2,
+      "title": "Fearless",
+      "artist": "Taylor Swift",
+      "cover": "fearless.png",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "title": "Speak Now",
+      "artist": "Taylor Swift",
+      "cover": "speakNow.jpg",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "title": "Red",
+      "artist": "Taylor Swift",
+      "cover": "red.png",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 5,
+      "title": "1898",
+      "artist": "Taylor Swift",
+      "cover": "1989.png",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 6,
+      "title": "Reputation",
+      "artist": "Taylor Swift",
+      "cover": "reputation.png",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 7,
+      "title": "Lover",
+      "artist": "Taylor Swift",
+      "cover": "lover.png",
+      "about": "This is about the album",
+      "favorite": false
+    },
+    {
+      "id": 8,
+      "title": "Folklore",
+      "artist": "Taylor Swift",
+      "cover": "folklore.png",
+      "about": "This is about the album",
+      "favorite": false
+    }
+  ]
+}
