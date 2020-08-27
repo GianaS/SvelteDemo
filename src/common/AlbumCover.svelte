@@ -8,9 +8,9 @@
 
 <style>
   .book {
-    --bg: #f5c839;
-    --bgDark: #f3b131;
-    --bgLight: #ffde77;
+    --bg: #F1E4E8;
+    --bgDark: #F1E4E8;
+    --bgLight: #F1E4E8;
 
     background: #fff;
     border-radius: 4px;

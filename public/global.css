@@ -65,10 +65,10 @@ button:focus {
 
 /* added from ps course */
 :root {
-  --colorFg: #533721;
+  --colorFg: #2D2D34;
   --colorFgInverse: #fff;
-  --colorBg: #eedec9;
-  --colorCta: #e64224;
+  --colorBg: #E2DCDE;
+  --colorCta: #B97375;
 
   --spacingXSmall: 0.25rem;
   --spacingSmall: 0.5rem;

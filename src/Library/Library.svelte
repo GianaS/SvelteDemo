@@ -12,11 +12,20 @@
   });
 </script>
 
+<style>
+  header {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
 <header>
-  <h1>Welcome, Swifties!</h1>
+  <h1>Taylor Swift's Library</h1>
 </header>
-
-<p>You can view, favorite, and review Taylor Swift's albums!</p>
-
-<Button>+ Add review</Button>
+<p>View, favorite, and review Taylor Swift's albums!</p>
 <AlbumGrid {albums} />

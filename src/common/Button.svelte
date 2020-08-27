@@ -18,7 +18,7 @@
     font-weight: var(--typeWeightBold);
     line-height: var(--typeLineHeightTight);
     margin: 0;
-    padding: calc(var(--spacingSmall) * 1.5) var(--spacingLarge);
+    padding: calc(var(--spacingXSmall) * 1.5) var(--spacingMedium);
     text-overflow: ellipsis;
     transition: filter 150ms;
     white-space: nowrap;

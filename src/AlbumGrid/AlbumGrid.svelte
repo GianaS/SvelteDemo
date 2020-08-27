@@ -27,6 +27,8 @@
     position: absolute;
     bottom: calc(-1 * var(--spacingSmall));
     right: calc(-1 * var(--spacingSmall));
+    border: 4px solid #E2DCDE;
+    border-radius: 50%;
   }
 </style>
 
