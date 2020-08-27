@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Button from "../common/Button.svelte";
 </script>
 
@@ -11,5 +11,5 @@
 </style>
 
 <nav>
-  <Button to='/'>&lt; Back</Button>
+  <Button to="/">&lt; Back</Button>
 </nav>

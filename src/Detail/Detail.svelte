@@ -31,10 +31,6 @@
       album = updatedAlbum;
     }
   };
-
-  const handleReview = () => {
-    alert("REVIEW");
-  };
 </script>
 
 <style>
@@ -113,7 +109,7 @@
 
   <div class="footer">
     <h2>Reviews</h2>
-    <Button on:click={handleReview}>+ Add a review</Button>
+    <Button to={`/review/${album.id}`}>+ Add a review</Button>
   </div>
 
   {#each reviews as review}

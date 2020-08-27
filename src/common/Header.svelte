@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let element = "h2";
   export let size = "medium";
 </script>

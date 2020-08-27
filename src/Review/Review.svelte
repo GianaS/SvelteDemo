@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let author;
   export let stars;
   export let review;
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-color: #B97375;
+    border-color: #b97375;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 8px 14px rgba(0, 0, 0, 0.2);
   }
 
