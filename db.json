@@ -6,7 +6,14 @@
       "artist": "Taylor Swift",
       "cover": "taylorSwift.jpeg",
       "about": "Taylor Swift is the self-titled debut studio album by American singer-songwriter Taylor Swift, released on October 24, 2006, by Big Machine Records. Swift was 16 years old the year of the album's release and wrote its songs during her freshman year of high school. Swift has writing credits on all of the album's songs, including those co-written with Liz Rose. Swift experimented with several producers, ultimately choosing Nathan Chapman, who had produced her demo album. Taylor Swift is a country album, with some tracks having pop and pop rock sensibilities. Lyrically, the album speaks of romantic relationships, a couple of which Swift wrote from observing them before being in one. It also touches on Swift's friends and her personal struggles in high school.",
-      "favorite": true
+      "favorite": true,
+      "reviews": [
+        {
+          "author": "Giana",
+          "stars": 5,
+          "review": "This is one of my favorite albums ever!"
+        }
+      ]
     },
     {
       "id": 2,

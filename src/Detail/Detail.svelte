@@ -7,13 +7,18 @@
   import Button from "../common/Button.svelte";
   import AlbumCover from "../common/AlbumCover.svelte";
   import Heart from "../Heart/Heart.svelte";
+  import Review from "../Review/Review.svelte";
+  import AlbumGrid from "../AlbumGrid/AlbumGrid.svelte";
+
   export let id;
 
   let album = {};
+  let reviews = [];
 
   onMount(async () => {
     const { data } = await httpGet(`/${id}`);
     album = data;
+    reviews = data.reviews ?? [];
   });
 
   const handleFavorite = async () => {
@@ -28,8 +33,8 @@
   };
 
   const handleReview = () => {
-    alert('REVIEW')
-  }
+    alert("REVIEW");
+  };
 </script>
 
 <style>
@@ -81,7 +86,7 @@
   }
 
   h2 {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 </style>
 
@@ -110,5 +115,8 @@
     <h2>Reviews</h2>
     <Button on:click={handleReview}>+ Add a review</Button>
   </div>
-  <!-- <Review /> -->
+
+  {#each reviews as review}
+    <Review {...review} />
+  {/each}
 </div>
