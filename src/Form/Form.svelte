@@ -40,22 +40,23 @@
 
 <style>
   .pageWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
   }
   form {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr;
-    gap: var(--spacingXLarge);
+    width: 55%;
   }
   .fields {
     display: grid;
     grid-auto-rows: auto;
     gap: var(--spacingMedium);
+    padding-top: 20px;
   }
   .preview {
-    display: grid;
-    grid-template-columns: minmax(20vw, 10rem);
-    grid-template-rows: minmax(32vw, 16rem);
+    padding-top: 60px;
+    width: 55%;
   }
   @media (min-width: 48rem) {
     form {
@@ -71,13 +72,10 @@
     <TextInput label="Name" bind:value={author} />
     <TextInput label="Stars" bind:value={stars} />
     <TextInput label="Review" bind:value={review} multiline />
-    <div>
-      <Button>Submit</Button>
-    </div>
-    <div>
-      <Header>Preview</Header>
-      <div class="preview" />
-      <Review {fullReview} />
-    </div>
+    <Button>Submit</Button>
   </form>
+  <div class="preview">
+    <Header>Preview</Header>
+    <Review {fullReview} />
+  </div>
 </div>

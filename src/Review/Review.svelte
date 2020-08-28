@@ -38,7 +38,7 @@
       {fullReview.stars}
     </span>
     <span>
-      <b>Reviews:</b>
+      <b>Review:</b>
       {fullReview.review}
     </span>
   </div>

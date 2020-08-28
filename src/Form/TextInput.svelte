@@ -7,10 +7,7 @@
 <style>
   label {
     font-weight: var(--typeWeightBold);
-    text-transform: uppercase;
-  }
-  span {
-    padding: 0 0 var(--spacingSmall) var(--spacingLarge);
+    padding: 10px 0 10px 0;
   }
   input,
   textarea {
