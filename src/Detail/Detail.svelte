@@ -18,7 +18,7 @@
   onMount(async () => {
     const { data } = await httpGet(`/${id}`);
     album = data;
-    reviews = data.reviews ?? [];
+    reviews = data.reviews;
   });
 
   const handleFavorite = async () => {
@@ -35,7 +35,7 @@
 
 <style>
   .pageWrapper {
-    padding: 0 40px;
+    padding: 0 40px 80px 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -112,7 +112,7 @@
     <Button to={`/review/${album.id}`}>+ Add a review</Button>
   </div>
 
-  {#each reviews as review}
-    <Review {...review} />
+  {#each reviews as fullReview}
+    <Review {fullReview} />
   {/each}
 </div>

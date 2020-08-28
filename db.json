@@ -12,6 +12,11 @@
           "author": "Giana",
           "stars": 5,
           "review": "This is one of my favorite albums ever!"
+        },
+        {
+          "author": "Corey",
+          "stars": "5",
+          "review": "I love this album!"
         }
       ]
     },
@@ -21,7 +26,14 @@
       "artist": "Taylor Swift",
       "cover": "fearless.png",
       "about": "Fearless is the second studio album by American singer-songwriter Taylor Swift. The album was released on November 11, 2008, by Big Machine Records. Swift wrote most of the songs during the time when she was promoting her self-titled debut studio album performing as an opening act for other country artists. Of the 13 tracks on the standard edition, eight were solely written by Swift, and the other were co-written by Swift with Liz Rose, Hillary Lindsey, Colbie Caillat, and John Rich. Swift also made her debut as a record producer, co-producing all songs with Nathan Chapman.",
-      "favorite": false
+      "favorite": false,
+      "reviews": [
+        {
+          "author": "Giana",
+          "stars": "5",
+          "review": "Amazing!"
+        }
+      ]
     },
     {
       "id": 3,
@@ -29,7 +41,19 @@
       "artist": "Taylor Swift",
       "cover": "speakNow.jpg",
       "about": "Speak Now is the third studio album by American singer-songwriter Taylor Swift. It was released on October 25, 2010, by Big Machine Records. Production for the album took place during 2009 to 2010 at several recording studios, and was handled by Swift and Nathan Chapman. Written entirely by Swift as the follow-up to Fearless, and described as a loose concept album about confessions,[3] Speak Now expands on the country pop style of her previous work, but with more rock sensibility, drawing influences from bluegrass, pop punk, pop rock and soft rock. Lyrically, it deals with themes such as love, romance, heartbreak and forgiveness.",
-      "favorite": false
+      "favorite": false,
+      "reviews": [
+        {
+          "author": "Giana",
+          "stars": "5",
+          "review": "Love it!"
+        },
+        {
+          "author": "Taylor",
+          "stars": "5",
+          "review": "Such a good album!"
+        }
+      ]
     },
     {
       "id": 4,
@@ -37,7 +61,8 @@
       "artist": "Taylor Swift",
       "cover": "red.png",
       "about": "Red is the fourth studio album by American singer-songwriter Taylor Swift. It was released on October 22, 2012, by Big Machine Records. Inspired by past romantic relationships evoking intense, tumultuous \"red\" emotions that Swift was experiencing during the conception of the project, Red touches on the themes of romance and heartbreak, but represents a mature perspective, while exploring the pressure of being in the public eye. Red is a country, pop and rock record with influences from arena rock, alternative rock, dance, dubstep, electronic, folk and heartland rock; many commentators described it as a pop album, while others deemed it as a country album that sees Swift transitioning from her roots to mainstream pop, which they found to be subsequently complete with its follow-up 1989 (2014).",
-      "favorite": true
+      "favorite": true,
+      "reviews": []
     },
     {
       "id": 5,
@@ -45,7 +70,8 @@
       "artist": "Taylor Swift",
       "cover": "1989.png",
       "about": "1989 is the fifth studio album by American singer-songwriter Taylor Swift, released on October 27, 2014, through Big Machine Records. Taking total control over artistic direction for the first time in her career, Swift named the album 1989 after her birth year and took inspirations from 1980s synth-pop to create a record that shifted her sound from country-oriented to pop. She enlisted a production team composed of Max Martin, Shellback, Ryan Tedder, Jack Antonoff, Imogen Heap, and Nathan Chapman. The final product is a synth-pop album that incorporates heavy synthesizers; programmed percussions; and processed, reverberated backing vocals.",
-      "favorite": false
+      "favorite": false,
+      "reviews": []
     },
     {
       "id": 6,
@@ -53,7 +79,8 @@
       "artist": "Taylor Swift",
       "cover": "reputation.png",
       "about": "Reputation (stylized in all lowercase) is the sixth studio album by American singer-songwriter Taylor Swift. It was released on November 10, 2017, through Big Machine Records. The record was primarily produced by Jack Antonoff, Max Martin, Shellback and Swift herself, who also serves as the executive producer. Described by Swift as her \"most cathartic album\", the album is influenced by Swift's highly publicized personal life and disputes. The album's sound features a darker and heavier tone compared to Swift's previous projects, delving into her vulnerable side. Musically, it is a pop, electropop, synth-pop, R&B and trap record that contains influences of urban genres like hip hop and EDM. Reputation is regarded as Swift's comeback album.",
-      "favorite": false
+      "favorite": false,
+      "reviews": []
     },
     {
       "id": 7,
@@ -61,7 +88,8 @@
       "artist": "Taylor Swift",
       "cover": "lover.png",
       "about": "Lover is the seventh studio album by American singer-songwriter Taylor Swift, released on August 23, 2019, through Republic Records. As the executive producer, Swift enlisted producers Jack Antonoff, Louis Bell, Frank Dukes and Joel Little for the album. Lover is primarily a pop, synth-pop, electropop and pop rock record with a retro style, encompassing diverse genres such as country, funk, dream pop, folk, rock and roll, R&B, bubblegum pop, pop punk and indie pop. Defined by Swift as \"a love letter to love itself\", Lover celebrates the full spectrum of love, using light and bright tones that depart from the dark nature of its predecessor, Reputation (2017). The album's music videos and art direction marked a change in Swift's visual appearance, which now embodies a summer aesthetic, consisting mostly of pastel colors.",
-      "favorite": true
+      "favorite": true,
+      "reviews": []
     },
     {
       "id": 8,
@@ -69,7 +97,8 @@
       "artist": "Taylor Swift",
       "cover": "folklore.png",
       "about": "Folklore (stylized in all lowercase) is the eighth studio album by American singer-songwriter Taylor Swift, released on July 24, 2020, through Republic Records. A surprise album announced without pre-release promotion, Folklore was written and recorded while in isolation during the COVID-19 pandemic. Categorized as an indie folk, alternative rock, electro-folk, and chamber pop record, the album marks a departure from the upbeat pop sound of Swift's preceding studio albums to stripped-down tunes driven by piano and guitar, featuring production from Aaron Dessner and Jack Antonoff. Folklore portrays what Swift called \"a collection of songs and stories that flowed like a stream of consciousness\" rising out of her imagination. It manifests vivid storytelling from largely third-person narratives that detail heartbreak and retrospection.",
-      "favorite": false
+      "favorite": false,
+      "reviews": []
     }
   ]
 }

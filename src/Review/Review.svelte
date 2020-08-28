@@ -1,7 +1,5 @@
 <script lang="ts">
-  export let author;
-  export let stars;
-  export let review;
+  export let fullReview;
 </script>
 
 <style>
@@ -33,15 +31,15 @@
   <div class="review">
     <span>
       <b>Author:</b>
-      {author}
+      {fullReview.author}
     </span>
     <span>
       <b>Stars:</b>
-      {stars}
+      {fullReview.stars}
     </span>
     <span>
       <b>Reviews:</b>
-      {review}
+      {fullReview.review}
     </span>
   </div>
 </div>
