@@ -18,7 +18,7 @@
   onMount(async () => {
     const { data } = await httpGet(`/${id}`);
     album = data;
-    reviews = data.reviews;
+    reviews = data.reviews.reverse();
   });
 
   const handleFavorite = async () => {
