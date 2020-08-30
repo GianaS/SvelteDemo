@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let element = "h2";
-  export let size = "medium";
+  export let element: string = "h2";
+  export let size: string = "medium";
 </script>
 
 <style>

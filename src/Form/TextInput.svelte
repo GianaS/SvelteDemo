@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let label;
-  export let value;
+  export let label: string;
+  export let value: string;
   export let multiline: boolean = false;
 </script>
 

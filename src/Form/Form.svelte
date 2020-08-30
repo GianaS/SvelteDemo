@@ -9,16 +9,42 @@
   import TextInput from "./TextInput.svelte";
   import Review from "../Review/Review.svelte";
 
-  export let id;
+  type Review = {
+    author: string;
+    stars: string;
+    review: string;
+  };
 
-  let author = "";
-  let stars = "";
-  let review = "";
+  type Album = {
+    id: number;
+    title: string;
+    artist: string;
+    cover: string;
+    about: string;
+    favorite: boolean;
+    reviews: Review[] | [];
+  };
+
+  const EMPTY_ALBUM = {
+    id: -1,
+    title: "",
+    artist: "",
+    cover: "",
+    about: "",
+    favorite: false,
+    reviews: [],
+  };
+
+  export let id: number;
+
+  let author: string = "";
+  let stars: string = "";
+  let review: string = "";
 
   $: fullReview = { author, stars, review };
 
-  let album = {};
-  let reviews = [];
+  let album: Album = EMPTY_ALBUM;
+  let reviews: Review[] | [] = [];
 
   onMount(async () => {
     const { data } = await httpGet(`/${id}`);

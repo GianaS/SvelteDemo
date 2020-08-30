@@ -1,7 +1,7 @@
 <script lang="ts">
   import { links } from "svelte-routing";
 
-  export let to;
+  export let to: string;
 </script>
 
 <style>

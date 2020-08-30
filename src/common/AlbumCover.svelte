@@ -2,15 +2,41 @@
   import { createEventDispatcher } from "svelte";
   import { links } from "svelte-routing";
 
-  export let album = {};
-  export let interactive = false;
+  type Review = {
+    author: string;
+    stars: string;
+    review: string;
+  };
+
+  type Album = {
+    id: number;
+    title: string;
+    artist: string;
+    cover: string;
+    about: string;
+    favorite: boolean;
+    reviews: Review[] | [];
+  };
+
+  const EMPTY_ALBUM = {
+    id: -1,
+    title: "",
+    artist: "",
+    cover: "",
+    about: "",
+    favorite: false,
+    reviews: [],
+  };
+
+  export let album: Album = EMPTY_ALBUM;
+  export let interactive: boolean = false;
 </script>
 
 <style>
   .album {
-    --bg: #F1E4E8;
-    --bgDark: #F1E4E8;
-    --bgLight: #F1E4E8;
+    --bg: #f1e4e8;
+    --bgDark: #f1e4e8;
+    --bgLight: #f1e4e8;
 
     background: #fff;
     border-radius: 4px;
@@ -85,7 +111,6 @@
   <div class="album album--cover cover">
     <span
       class="cover"
-      style={`background-image: url("/albumCovers/${album.cover}")`}>
-    </span>
+      style={`background-image: url("/albumCovers/${album.cover}")`} />
   </div>
 {/if}

@@ -10,10 +10,36 @@
   import Review from "../Review/Review.svelte";
   import AlbumGrid from "../AlbumGrid/AlbumGrid.svelte";
 
+  type Review = {
+    author: string;
+    stars: string;
+    review: string;
+  };
+
+  type Album = {
+    id: number;
+    title: string;
+    artist: string;
+    cover: string;
+    about: string;
+    favorite: boolean;
+    reviews: Review[] | [];
+  };
+
+  const EMPTY_ALBUM = {
+    id: -1,
+    title: "",
+    artist: "",
+    cover: "",
+    about: "",
+    favorite: false,
+    reviews: [],
+  };
+
   export let id;
 
-  let album = {};
-  let reviews = [];
+  let album = EMPTY_ALBUM;
+  let reviews: Review[] | [] = [];
 
   onMount(async () => {
     const { data } = await httpGet(`/${id}`);

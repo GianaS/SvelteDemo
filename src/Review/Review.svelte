@@ -1,5 +1,11 @@
 <script lang="ts">
-  export let fullReview;
+  type Review = {
+    author: string;
+    stars: string;
+    review: string;
+  };
+
+  export let fullReview: Review;
 </script>
 
 <style>

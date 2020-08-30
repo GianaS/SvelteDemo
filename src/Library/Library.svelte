@@ -4,8 +4,24 @@
   import AlbumGrid from "../AlbumGrid/AlbumGrid.svelte";
   import { httpGet } from "../common/api";
 
-  let albums = [];
-  
+  type Review = {
+    author: string;
+    stars: string;
+    review: string;
+  };
+
+  type Album = {
+    id: number;
+    title: string;
+    artist: string;
+    cover: string;
+    about: string;
+    favorite: boolean;
+    reviews: Review[] | [];
+  };
+
+  let albums: Album[] = [];
+
   onMount(async () => {
     const { data } = await httpGet("/?_sort=id$_order=desc");
     albums = data;
