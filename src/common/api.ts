@@ -1,4 +1,4 @@
-export const bookApiUrl = 'http://localhost:3000/albums'
+export const albumApiUrl = 'http://localhost:3000/albums'
 
 export function httpGet(path) {
   return req(path, 'GET', null)
@@ -13,7 +13,7 @@ export function httpPut(path, data) {
 }
 
 async function req(path, method = 'GET', data) {
-  const res = await fetch(bookApiUrl + path, {
+  const res = await fetch(albumApiUrl + path, {
     method,
     headers: {
       'Content-Type': 'application/json'

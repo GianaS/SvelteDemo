@@ -7,7 +7,7 @@
 </script>
 
 <style>
-  .book {
+  .album {
     --bg: #F1E4E8;
     --bgDark: #F1E4E8;
     --bgLight: #F1E4E8;
@@ -21,12 +21,12 @@
     text-decoration: none;
   }
 
-  .book--interactive {
+  .album--interactive {
     border: none;
     cursor: pointer;
   }
-  .book--interactive:hover,
-  .book--interactive:focus {
+  .album--interactive:hover,
+  .album--interactive:focus {
     filter: brightness(90%);
     outline: none;
   }
@@ -57,8 +57,8 @@
     width: 300px;
   }
 
-  .book--interactive:hover .cover,
-  .book--interactive:focus .cover {
+  .album--interactive:hover .cover,
+  .album--interactive:focus .cover {
     box-shadow: 0.375rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
     transform: translate(0.0625rem, -0.3125rem) skew(0, -5deg) scaleX(1.02);
   }
@@ -73,7 +73,7 @@
 {#if interactive}
   <a
     href={`albums/${album.id}`}
-    class="book book--interactive book--cover cover"
+    class="album album--interactive album--cover cover"
     use:links>
     <span
       class="cover"
@@ -82,7 +82,7 @@
     </span>
   </a>
 {:else}
-  <div class="book book--cover cover">
+  <div class="album album--cover cover">
     <span
       class="cover"
       style={`background-image: url("/albumCovers/${album.cover}")`}>
